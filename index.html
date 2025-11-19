@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как тебе лучше играть в водное поло</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <button id="showPrank">Главная</button>
+        <button id="showMemory">Игра на память</button>
+        <button id="showSnake">Змейка</button>
+    </nav>
+    <section id="prank">
+        <div class="container">
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <h1>Как тебе лучше играть в водное поло</h1>
+        <button id="start">Начать</button>
+        <div id="message1" class="message hidden">ни как, ты лох</div>
+        <button id="continue" class="hidden">Продолжить</button>
+        <div id="message2" class="message hidden">Ладно, я пошутил, тебе не надо играть лучше. Ты и так играешь отлично </div>
+        </div>
+    </section>
+    <section id="memory" class="hidden">
+        <div class="memory-container">
+            <div class="title">🧠 Emoji Memory Match</div>
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="game-board" id="gameBoard"></div>
+            <div class="win-message" id="winMessage">🎉 You matched them all! You win! 🎉</div>
+        </div>
+    </section>
+    <section id="snake" class="hidden">
+        <div class="crt">
+            <div class="bezel">
+                <div class="wrap">
+                    <h1 class="logo">S N A K E</h1>
+                    <div class="panel">
+                        <div id="hud">
+                            <div id="score" class="led">SCORE <span id="scoreVal">000000</span></div>
+                            <div id="status" class="sub">ARROWS/WASD • P=PAUSE • R=RESET</div>
+                        </div>
+                        <canvas id="game" width="480" height="480"></canvas>
+                        <div class="controls">
+                            <button id="btnPause" class="btn">PAUSE</button>
+                            <button id="btnRestart" class="btn">RESET</button>
+                        </div>
+                    </div>
+                    <p class="footer sub">© 1983 (totally real) — 1 CREDIT TO PLAY</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
